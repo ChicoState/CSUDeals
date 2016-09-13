@@ -15,6 +15,7 @@ CSCI 430 Group Project Repository
 - [x] Point Value :heavy_minus_sign: Item Description :heavy_minus_sign: Group Member Assigned :heavy_minus_sign: Relevant Link(s)
 - Relevant Information Post-completion
 - [x] 1 :heavy_minus_sign: Create ToDo List :heavy_minus_sign: @shanemacbride
+- [x] 1 :heavy_minus_sign: Upload base Ionic "tabs" templated CSUDeals app :heavy_minus_sign: @shanemacbride
 - [ ] 1 :heavy_minus_sign: Choose the best notification plugin :heavy_minus_sign: (Unclaimed) :heavy_minus_sign: [Notification Plugins](https://market.ionic.io/search?q=notifications)
 - [ ] 1 :heavy_minus_sign: Choose how to handle user logins :heavy_minus_sign: (Unclaimed)
 - [ ] 3 :heavy_minus_sign: Become familiar with chosen notification plugin :heavy_minus_sign: (Unclaimed)
