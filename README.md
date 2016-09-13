@@ -20,5 +20,3 @@ CSCI 430 Group Project Repository
 - [ ] 3 :heavy_minus_sign: Become familiar with chosen notification plugin :heavy_minus_sign: (Unclaimed)
 - [ ] 3 :heavy_minus_sign: Become familiar with chosen user login handling method :heavy_minus_sign: (Unclaimed)
 - [ ] 3 :heavy_minus_sign: Become more familiar with Ionic in general :heavy_minus_sign: (unclaimed)
-- [ ] 1 :heavy_minus_sign: Create a GitHub Page for our group's repository :heavy_minus_sign: @shanemacbride
-- [ ] 2 :heavy_minus_sign: Improve upon GitHub Page after it is created :heavy_minus_sign: (unclaimed)
