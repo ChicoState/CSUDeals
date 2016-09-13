@@ -4,7 +4,6 @@ CSCI 430 Group Project Repository
 ##### ToDo List for Group
 - [x] Item Description :heavy_minus_sign: Relevant Link(s)
 - Relevant Information Post-completion
-- [x] Create ToDo List :+1:
 - [x] Choose a Framework
 - [Ionic](http://ionicframework.com/)
 - [ ] Get Ionic development environments installed
@@ -15,6 +14,7 @@ CSCI 430 Group Project Repository
 ##### ToDo List for Individuals
 - [x] Point Value :heavy_minus_sign: Item Description :heavy_minus_sign: Group Member Assigned :heavy_minus_sign: Relevant Link(s)
 - Relevant Information Post-completion
+- [x] 1 :heavy_minus_sign: Create ToDo List :heavy_minus_sign: @shanemacbride
 - [ ] 1 :heavy_minus_sign: Choose the best notification plugin :heavy_minus_sign: (Unclaimed) :heavy_minus_sign: [Notification Plugins](https://market.ionic.io/search?q=notifications)
 - [ ] 1 :heavy_minus_sign: Choose how to handle user logins :heavy_minus_sign: (Unclaimed)
 - [ ] 3 :heavy_minus_sign: Become familiar with chosen notification plugin :heavy_minus_sign: (Unclaimed)
