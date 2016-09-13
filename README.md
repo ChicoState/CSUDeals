@@ -9,6 +9,7 @@ CSCI 430 Group Project Repository
 - [ ] Get Ionic development environments installed
 - [ ] Become familiar with Ionic
 - [ ] Complete a basic "Hello World" tutorial for Ionic
+- [ ] Download Ionic View application onto smart phones for easy testing
 - [ ] Become generally familiar with Ionic plugins :heavy_minus_sign: [Ionic Marketplace](https://market.ionic.io/plugins)
 
 ##### ToDo List for Individuals
