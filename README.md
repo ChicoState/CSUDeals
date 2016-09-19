@@ -6,7 +6,7 @@ CSCI 430 Group Project Repository
 - Relevant Information Post-completion
 - [x] Choose a Framework
 - [Ionic](http://ionicframework.com/)
-- [ ] Get Ionic development environments installed
+- [x] Get Ionic development environments installed
 - [ ] Become familiar with Ionic
 - [ ] Complete a basic "Hello World" tutorial for Ionic
 - [ ] Download Ionic View application onto smart phones for easy testing
