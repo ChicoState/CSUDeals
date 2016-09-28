@@ -24,3 +24,6 @@ CSCI 430 Group Project Repository
 - [ ] 3 :heavy_minus_sign: Become familiar with chosen notification plugin :heavy_minus_sign: (Unclaimed)
 - [ ] 3 :heavy_minus_sign: Become familiar with chosen user login handling method :heavy_minus_sign: (Unclaimed)
 - [ ] 2 :heavy_minus_sign: Find a unit testing framework for our project :heavy_minus_sign: (Unclaimed)
+
+##### Functions to consider for implementation
+- [ ] Add a way for users to upload profile images for chat
