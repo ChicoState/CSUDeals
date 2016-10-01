@@ -26,6 +26,11 @@ $scope.login = function() {
    }).then(function(modal) {
      $scope.modal = modal;
    });
+   $ionicModal.fromTemplateUrl('templates/reset-password.html', {
+     scope: $scope
+   }).then(function(reset) {
+     $scope.reset = reset;
+   })
 
    $scope.createUser= function (user) {
      console.log("Create User Function called");
