@@ -1,7 +1,7 @@
 angular.module('starter.controllers', [])
 
-.controller('LoginCtrl', function($scope, LoginService, $ionicPopup, $state) {
-	
+/*.controller('LoginCtrl', function($scope, LoginService, $ionicPopup, $state) {
+
 	$scope.data = {};
 
 $scope.login = function() {
@@ -14,8 +14,61 @@ $scope.login = function() {
             });
         });
     }
-})
+})*/
+.controller('LoginCtrl', function($scope, $ionicModal, $ionicPopup, $state, $firebaseAuth, $ionicLoading, $rootScope) {
 
+  var ref = new Firebase($scope.firebaseUrl);
+  var auth = $firebaseAuth();
+
+
+   $ionicModal.fromTemplateUrl('templates/signup.html', {
+     scope: $scope
+   }).then(function(modal) {
+     $scope.modal = modal;
+   });
+
+   $scope.createUser= function (user) {
+     console.log("Create User Function called");
+     if (user && user.email && user.password && user.displayname) {
+       $ionicLoading.show({
+         template: 'Signing Up...'
+       });
+
+       firebase.auth().createUserWithEmailAndPassword(
+         user.email,
+         user.password
+       ).then(function (userData) {
+         alert("User created successfully!");
+         $ionicLoading.hide();
+         $scope.modal.hide();
+       }).catch(function(error) {
+         alert("error: " + error);
+         $ionicLoading.hide();
+       });
+     } else
+      alert("Please fill all details");
+   }
+
+   $scope.signInWithEmailAndPassword = function (user) {
+     if (user.email && user.pwdForLogin) {
+       $ionicLoading.show({
+         template: 'Signing In...'
+       });
+       firebase.auth().signInWithEmailAndPassword(
+         user.email,
+         user.pwdForLogin
+       ).then(function (authData) {
+         console.log("logged in as:" + authData.uid);
+         $ionicLoading.hide();
+         $state.go('tab.dash');
+       }).catch(function (error) {
+         alert("Authentication failed:" + error.message);
+         $ionicLoading.hide();
+       });
+     } else
+        alert("Please enter correct email and password");
+   }
+ })
 .controller('DashCtrl', function($scope) {})
 
 .controller('ChatsCtrl', function($scope, Chats) {

@@ -1,11 +1,17 @@
-angular.module('starter.services', [])
+angular.module('starter.services', ['firebase'])
+.factory("Auth", ["$firebaseAuth", "$rootScope",
+function ($firebaseAuth, $rootScope) {
+    var ref = new Firebase(firebaseUrl);
+    return $firebaseAuth();
+}])
 
-.service('LoginService', function($q) {
+
+/*.service('LoginService', function($q) {
     return {
         loginUser: function(name, pw) {
             var deferred = $q.defer();
             var promise = deferred.promise;
- 
+
             if (name == 'legion' && pw == 'wearemany') {
                 deferred.resolve('Welcome ' + name + '!');
             } else {
@@ -22,7 +28,7 @@ angular.module('starter.services', [])
             return promise;
         }
     }
-})
+})*/
 
 .factory('Chats', function() {
   // Might use a resource here that returns a JSON array
