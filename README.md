@@ -29,9 +29,9 @@ CSCI 430 Group Project Repository
 - [x] 1 :heavy_minus_sign: add search feature for businesses in database :heavy_minus_sign: @hschipper
 - [ ] 2 :heavy_minus_sign: implement logout feature (halfwaydone) :heavy_minus_sign: (Unclaimed)
 - [ ] 3 :heavy_minus_sign: Become familiar with chosen notification plugin :heavy_minus_sign: (Unclaimed)
-- [x] 3 :heavy_minus_sign: Become familiar with chosen user login handling method :heavy_minus_sign: (Hannah)
+- [x] 3 :heavy_minus_sign: Become familiar with chosen user login handling method :heavy_minus_sign: (@hschipper)
 - [ ] 2 :heavy_minus_sign: Find a unit testing framework for our project :heavy_minus_sign: (Unclaimed)
-- [ ] 3 :heavy_minus_sign: Get password reset feature working with firebase :heavy_minus_sign: (Unclaimed)
+- [ ] 3 :heavy_minus_sign: Get forgot password feature working with firebase (halfway done) :heavy_minus_sign: (Unclaimed)
 - [ ] 2 :heavy_minus_sign: Add email verification when creating an account (firebase) :heavy_minus_sign: (Unclaimed)
 - [ ] 2 :heavy_minus_sign: Add change your password (user information) feature (firebase) :heavy_minus_sign: (Unclaimed)
 - [ ] 1 :heavy_minus_sign: Add button in tab-dash for following business :heavy_minus_sign: (Unclaimed)
