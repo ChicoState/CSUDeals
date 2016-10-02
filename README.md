@@ -12,6 +12,7 @@ CSCI 430 Group Project Repository
 - [ ] Download Ionic View application onto smart phones for easy testing
 - [ ] Become generally familiar with Ionic plugins :heavy_minus_sign: [Ionic Marketplace](https://market.ionic.io/plugins)
 - [ ] Become more familiar with Ionic in general
+- [ ] Become familiar with firebase 3.4.0 
 
 ##### ToDo List for Individuals
 - [x] Point Value :heavy_minus_sign: Item Description :heavy_minus_sign: Group Member Assigned :heavy_minus_sign: Relevant Link(s)
@@ -41,6 +42,7 @@ CSCI 430 Group Project Repository
 - [ ] 3 :heavy_minus_sign: using firebase auth() function to set write permission for business owners only :heavy_minus_sign: (Unclaimed)
 - [ ] 1 :heavy_minus_sign: add a get directions button on tab-dash :heavy_minus_sign: (Unclaimed)
 - [ ] 3 :heavy_minus_sign: get "get directions" button working with google maps or something :heavy_minus_sign: (Unclaimed)
+- [ ] 2 :heavy_minus_sign: add restrictions to hours in database to users can only enter in valid times :heavy_minus_sign: (Unclaimed)
 
 ##### Functions to consider for implementation
 - [ ] Add a way for users to upload profile images for chat
