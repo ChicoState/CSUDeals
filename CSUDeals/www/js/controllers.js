@@ -34,7 +34,7 @@ $scope.login = function() {
 
 /*
  This was for adding functionality for when a user forgot their password.
-  I couldnt get it to work becase firebase ends an email to the user with
+  I couldnt get it to work because firebase sends an email to the user with
   a URL link to reset the email the URL like needs to be to a domain that
 we own. furthermore I am not sure how we would get the information
  form the site into our database. There may also be a fundimental flaw in This
@@ -104,38 +104,56 @@ we own. furthermore I am not sure how we would get the information
         alert("Please enter correct email and password");
    }
  })
-.controller('DashCtrl', function($scope, $ionicModal, $ionicLoading) {
-  $ionicModal.fromTemplateUrl('templates/add-buisness.html', {
+
+
+.controller('DashCtrl', function($scope, $ionicModal, $ionicLoading, Chats, $firebaseArray) {
+  $ionicModal.fromTemplateUrl('templates/add-business.html', {
     scope: $scope
   }).then(function(add) {
     $scope.add = add;
   })
 
 var ref = new Firebase($scope.firebaseUrl + "/buisnesses");
-
- $scope.addBuisness = function(buisness) {
-   if(buisness.logo && buisness.address && buisness.hours) {
+//this code adds to ourdatabase
+ $scope.addBusiness = function(business) {
+   if(business.logo && business.address && business.hours) {
      $ionicLoading.show({
        template: "processing information"
      });
     ref.push({
-       name : buisness.logo,
-       url : buisness.url,
-       address: buisness.address,
-       hours: buisness.hours
-     });//.then(function (business) {
-       console.log("added business information to database");
-       $ionicLoading.hide();
-
-      //call some function to display database?
-
-  //  }).catch(function(error) {
-  //    alert("Storing Business data failed" + error.message);
-  //    $ionicLoading.hide();
-  //  });
+       name : business.logo,
+       url : business.url,
+       address: business.address,
+       hours: business.hours
+     }, function(error) {
+       if (error) {
+         alert("Storing Business data failed" + error.message);
+         $ionicLoading.hide();
+       } else {
+         console.log("added business information to database");
+         $ionicLoading.hide();
+         $scope.add.hide();
+         alert("business added successfully");
+       }
+     });
    } else
      alert("Please fill all details with * ")
  }
+
+//this code reads from database and puts information into an array
+  $scope.businesses = [];
+ ref.on('child_added', function(snapshot, prevChildKey) {
+   var newPost = snapshot.val();
+   var business = {
+     name: newPost.name,
+     url:  newPost.url,
+     address: newPost.address,
+     hours: newPost.hours
+   };
+   $scope.businesses.push(business);
+   });
+
+
 })
 
 .controller('ChatsCtrl', function($scope, Chats, $firebaseAuth, $ionicLoading) {
