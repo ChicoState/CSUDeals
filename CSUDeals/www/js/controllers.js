@@ -110,31 +110,32 @@ we own. furthermore I am not sure how we would get the information
   }).then(function(add) {
     $scope.add = add;
   })
-  //havnt got this part wokring yet.... still working on it.
-// $scope.business = Business;
-/* $scope.addBuisness = function(buisness) {
+
+var ref = new Firebase($scope.firebaseUrl + "/buisnesses");
+
+ $scope.addBuisness = function(buisness) {
    if(buisness.logo && buisness.address && buisness.hours) {
      $ionicLoading.show({
        template: "processing information"
      });
-     firebase.database().push({
-       "name" : buisness.logo,
-       "url" : buisness.url,
-       "address": buisness.address,
-       "hours": buisness.hours
-     }).then(function (business) {
+    ref.push({
+       name : buisness.logo,
+       url : buisness.url,
+       address: buisness.address,
+       hours: buisness.hours
+     });//.then(function (business) {
        console.log("added business information to database");
        $ionicLoading.hide();
 
       //call some function to display database?
 
-    }).catch(function(error) {
-      alert("Storing Business data failed" + error.message);
-      $ionicLoading.hide();
-    });
+  //  }).catch(function(error) {
+  //    alert("Storing Business data failed" + error.message);
+  //    $ionicLoading.hide();
+  //  });
    } else
      alert("Please fill all details with * ")
- }*/
+ }
 })
 
 .controller('ChatsCtrl', function($scope, Chats, $firebaseAuth, $ionicLoading) {
