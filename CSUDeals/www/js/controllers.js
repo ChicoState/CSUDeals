@@ -32,6 +32,36 @@ $scope.login = function() {
      $scope.reset = reset;
    })
 
+/*
+ This was for adding functionality for when a user forgot their password.
+  I couldnt get it to work becase firebase ends an email to the user with
+  a URL link to reset the email the URL like needs to be to a domain that
+we own. furthermore I am not sure how we would get the information
+ form the site into our database. There may also be a fundimental flaw in This
+ code but I cant test it without the first problem being resolved. -Hannah
+
+   $scope.resetpass= function(pass) {
+     console.log("reset password function called");
+     if(user.email) {
+       ionicLoading.show({
+         template: 'Sending email...'
+       });
+       firebase.auth().sendPasswordResetEmail(
+         user.email
+       ).then(function (pass) {
+         alert("email was sent");
+         $ionicLoading.hide();
+         $scope.reset.hide();
+       }).catch(function (error) {
+         alert("error: " + error);
+         $ionicLoading.hide();
+       });
+     } else {
+       alert ("please enter your email");
+     }
+   }
+*/
+
    $scope.createUser= function (user) {
      console.log("Create User Function called");
      if (user && user.email && user.password && user.displayname) {
@@ -74,9 +104,40 @@ $scope.login = function() {
         alert("Please enter correct email and password");
    }
  })
-.controller('DashCtrl', function($scope) {})
+.controller('DashCtrl', function($scope, $ionicModal, $ionicLoading) {
+  $ionicModal.fromTemplateUrl('templates/add-buisness.html', {
+    scope: $scope
+  }).then(function(add) {
+    $scope.add = add;
+  })
+  //havnt got this part wokring yet.... still working on it.
+// $scope.business = Business;
+/* $scope.addBuisness = function(buisness) {
+   if(buisness.logo && buisness.address && buisness.hours) {
+     $ionicLoading.show({
+       template: "processing information"
+     });
+     firebase.database().push({
+       "name" : buisness.logo,
+       "url" : buisness.url,
+       "address": buisness.address,
+       "hours": buisness.hours
+     }).then(function (business) {
+       console.log("added business information to database");
+       $ionicLoading.hide();
 
-.controller('ChatsCtrl', function($scope, Chats) {
+      //call some function to display database?
+
+    }).catch(function(error) {
+      alert("Storing Business data failed" + error.message);
+      $ionicLoading.hide();
+    });
+   } else
+     alert("Please fill all details with * ")
+ }*/
+})
+
+.controller('ChatsCtrl', function($scope, Chats, $firebaseAuth, $ionicLoading) {
   // With the new view caching in Ionic, Controllers are only called
   // when they are recreated or on app start, instead of every page change.
   // To listen for when this page is active (for example, to refresh data),

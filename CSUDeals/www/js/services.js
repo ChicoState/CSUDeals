@@ -4,7 +4,11 @@ function ($firebaseAuth, $rootScope) {
     var ref = new Firebase(firebaseUrl);
     return $firebaseAuth();
 }])
-
+.factory("Buisness", ["$firebaseDatabase", "$rootScope",
+function($firebaseDatabase, rootScope) {
+    var BuisnessRef = new Firebase(firebaseUrl);
+    return $firebaseDatabase();
+}])
 
 /*.service('LoginService', function($q) {
     return {
