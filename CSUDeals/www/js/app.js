@@ -20,8 +20,10 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','f
       // org.apache.cordova.statusbar required
       StatusBar.styleDefault();
     }
+
     $rootScope.firebaseUrl = firebaseUrl;
     $rootScope.displayName = null;
+
     Auth.$onAuthStateChanged(function (authData) {
       if (authData) {
         console.log("Logged in as:", authData.uid);
@@ -31,6 +33,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','f
         $location.path('/login');
       }
     });
+
     $rootScope.logout = function() {
       console.log("logging out from the app");
       $ionicloading.show({
@@ -38,6 +41,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','f
       });
       Auth.$signout();
     }
+
     $rootScope.$on("$stateChangeError", function (event, toState, toParams, fromState, fromParams, error) {
       //catch error thrown when $requireAuth promise is rejected and redirect to login page
       if (error == "AUTH_REQUIRED") {
