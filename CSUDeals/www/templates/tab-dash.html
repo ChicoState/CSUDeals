@@ -1,11 +1,29 @@
 <ion-view view-title="Places">
   <ion-content class="padding">
+    <button class="button button-block button-dark" ng-click="add.show()">
+      Add My Business
+    </button>
     <center><!--<h2>Places</h2>-->
     <p>Different businesses will be listed here with the options to:<br><br>
        - Follow/Unfollow<br>
        - Get Directions<br>
        - View Menu
     </p></center>
+
+  <label class="item-input">
+    <i class="icon ion-search placeholder-icon"></i>
+    <input type="search" placeholder="Search" ng-model="searchText">
+  </label>
+  <ion-list>
+      <div collection-repeat="business in businesses | filter:searchText" divider-collection-repeat>
+        <ion-item>
+            <h2>{{business.name}}</h2>
+            <div>website: {{business.url}}</div>
+            <div>address: {{business.address}}</div>
+            <div>hours: {{business.hours}}</div>
+        </ion-item>
+      </div>
+  </ion-list>
 <!--
     <p>
     This is the Ionic starter for tabs-based apps. For other starters and ready-made templates, check out the <a href="http://market.ionic.io/starters" target="_blank">Ionic Market</a>.
