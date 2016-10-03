@@ -1,4 +1,16 @@
-angular.module('starter.services', [])
+angular.module('starter.services', ['firebase'])
+.factory("Auth", ["$firebaseAuth", "$rootScope",
+function ($firebaseAuth, $rootScope) {
+    var ref = new Firebase(firebaseUrl);
+    return $firebaseAuth();
+}])
+.factory("Buisness", ["$firebaseDatabase", "$rootScope",
+function($firebaseDatabase, rootScope) {
+    var BuisnessRef = new Firebase(firebaseUrl);
+    return $firebaseDatabase();
+}])
+
+
 
 .factory('Chats', function() {
   // Might use a resource here that returns a JSON array
@@ -6,28 +18,28 @@ angular.module('starter.services', [])
   // Some fake testing data
   var chats = [{
     id: 0,
-    name: 'Ben Sparrow',
-    lastText: 'You on your way?',
+    name: 'The Bear',
+    lastText: 'Bear Burgers 1/2 Price Until 5PM!',
     face: 'img/ben.png'
   }, {
     id: 1,
-    name: 'Max Lynx',
-    lastText: 'Hey, it\'s me',
+    name: 'Sierra Nevada',
+    lastText: 'Free Beer w/ Entree Purchase Today Only!',
     face: 'img/max.png'
   }, {
     id: 2,
-    name: 'Adam Bradleyson',
-    lastText: 'I should buy a boat',
+    name: 'Riley\'s',
+    lastText: 'Well Drinks $0.50 Each 8PM-9PM Today!',
     face: 'img/adam.jpg'
   }, {
     id: 3,
-    name: 'Perry Governor',
-    lastText: 'Look at my mukluks!',
+    name: 'Chipotle',
+    lastText: 'Burritos BOGO After 5PM Today!',
     face: 'img/perry.png'
   }, {
     id: 4,
-    name: 'Mike Harrington',
-    lastText: 'This is wicked good ice cream.',
+    name: 'Burgers & Brew',
+    lastText: 'Happy Hour All Day Today!',
     face: 'img/mike.png'
   }];
 
@@ -48,3 +60,30 @@ angular.module('starter.services', [])
     }
   };
 });
+
+
+
+
+/*.service('LoginService', function($q) {
+    return {
+        loginUser: function(name, pw) {
+            var deferred = $q.defer();
+            var promise = deferred.promise;
+
+            if (name == 'legion' && pw == 'wearemany') {
+                deferred.resolve('Welcome ' + name + '!');
+            } else {
+                deferred.reject('Wrong credentials.');
+            }
+            promise.success = function(fn) {
+                promise.then(fn);
+                return promise;
+            }
+            promise.error = function(fn) {
+                promise.then(null, fn);
+                return promise;
+            }
+            return promise;
+        }
+    }
+})*/

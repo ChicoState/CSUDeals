@@ -1,0 +1,31 @@
+<ion-modal-view>
+    <ion-header-bar class="bar bar-header bar-positive">
+      <h1 class="title">Add My Business</h1>
+      <button class="button button-clear button-primary" ng-click="add.hide()">
+        Cancel
+      </button>
+    </ion-header-bar>
+    <ion-content class="padding">
+        <div class="list">
+          <label class="item item-input">
+            <span class="input-label">*Business name:</span>
+            <input ng-model="business.logo" type="text">
+          </label>
+          <label class="item item-input">
+            <span class="input-label">Business Website:</span>
+            <input ng-model="business.url" type="text">
+          </label>
+          <label class="item item-input">
+            <span class="input-label">*Business address:</span>
+            <input ng-model="business.address" type="text">
+          </label>
+          <label class="item item-input">
+            <span class="input-label">*Business hours:</span>\
+            <input ng-model="business.hours" type="text">
+          </label>
+          <button class="button button-full button-positive" ng-click="addBusiness(business)">
+            Submit
+          </button>
+        </div>
+      </ion-content>
+</ion-modal-view>
