@@ -44,6 +44,7 @@ CSCI 430 Group Project Repository
 - [ ] 3 :heavy_minus_sign: get "get directions" button working with google maps or something :heavy_minus_sign: (Unclaimed)
 - [ ] 2 :heavy_minus_sign: add restrictions to hours in database to users can only enter in valid times :heavy_minus_sign: (Unclaimed)
 - [ ] 2 :heavy_minus_sign: throw/catch proper errors for invalid logins :heavy_minus_sign: @hschipper
+- [ ] 2 :heavy_minus_sign: Add logout functionality/button :heavy_minus_sign: @kmendoza18
 
 ##### Functions to consider for implementation
 - [ ] Add a way for users to upload profile images for chat
