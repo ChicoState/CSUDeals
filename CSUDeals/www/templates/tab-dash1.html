@@ -16,15 +16,11 @@
   </label>
   <ion-list>
       <div collection-repeat="business in businesses | filter:searchText" divider-collection-repeat>
-        <ion-item class="item item-thumbnail-left item-button-right"> 
-            <img src="img/default-avatar.jpg"/>
+        <ion-item> 
             <h2>{{business.name}}</h2>
             <div>website: {{business.url}}</div>
             <div>address: {{business.address}}</div>
             <div>hours: {{business.hours}}</div>
-            <button class="button button-dark">
-                <i class="icon ion-chevron-right" href="#/tab/dash/directions.html"></i>
-            </button>
         </ion-item>
       </div>
   </ion-list>

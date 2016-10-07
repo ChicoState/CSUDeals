@@ -101,6 +101,16 @@ console.log("setting config");
       }
     }
   })
+  .state('tab.directions', {
+    url: '/dash/directions',
+    views: {
+      'tab-dash': {
+        templateUrl: 'templates/directions.html',
+        controller: 'DirectionsCtrl'
+      }
+    }
+  })
+
 
   .state('tab.chats', {
       url: '/chats',
