@@ -20,8 +20,20 @@
             <input ng-model="business.address" type="text">
           </label>
           <label class="item item-input">
-            <span class="input-label">*Business hours:</span>\
+            <span class="input-label">*Business hours:</span>
             <input ng-model="business.hours" type="text">
+          </label>
+          <label class="item item-input">
+            <span class="input-label">Facebook URL:</span>
+            <input type="text" ng-model="business.facebook" placeholder="facebook.com/FACEBOOK_URL">
+          </label>
+          <label class="item item-input">
+            <span class="input-label">Twitter URL:</span>
+            <input type="text" ng-model="business.twitter" placeholder="twitter.com/TWITTER_URL">
+          </label>
+          <label class="item item-input">
+             <span class="input-label">Yelp URL:</span>
+             <input typoe="text" ng-model="business.yelp" placeholder="yelp.com/biz/YELP_URL">
           </label>
           <button class="button button-full button-positive" ng-click="addBusiness(business)">
             Submit

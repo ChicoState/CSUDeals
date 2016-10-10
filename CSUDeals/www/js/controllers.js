@@ -124,7 +124,10 @@ we own. furthermore I am not sure how we would get the information
        name : business.logo,
        url : business.url,
        address: business.address,
-       hours: business.hours
+       hours: business.hours,
+       facebookurl: business.facebook,
+       twitterurl: business.twitter,
+       yelpurl: business.yelp
      }, function(error) {
        if (error) {
          alert("Storing Business data failed" + error.message);
