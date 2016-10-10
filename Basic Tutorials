@@ -13,14 +13,18 @@
 #### Running the App
 
 1 - Go into the project folder: "$ cd ../CSUDeals/CSUDeals"
-2 - "ionic serve"
+2 - "$ ionic serve"
 
 #### Tab Views
 
 1 - "$ cd ../CSUDeals/CSUDeals/www/templates"
 2 - Edit the HTML file for the view you want to change
+3 - "$ ionic serve"
 
 #### Adding Images
 
 1 - "$ cd ../CSUDeals/CDUDeals/www/img"
 2 - Add images you want to use
+3 - Add a link to the image in "../CSUDeals/CSUDeals/www/img/style.css"
+4 - Add a link to the css in the HTML view you want the image to be in
+5 - "$ ionic serve"
