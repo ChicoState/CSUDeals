@@ -1,21 +1,26 @@
 ##### Installing Ionic (Ubuntu)
 
-1 :heavy_minus_sign: "$ sudo apt-get update"
-2 :heavy_minus_sign: "$ sudo apt-get upgrade"
-3 :heavy_minus_sign: Visit page: http://ionicframework.com/getting-started/
-4 :heavy_minus_sign: Follow instructions on the web page
+1 - "$ sudo apt-get update"
+2 - "$ sudo apt-get upgrade"
+3 - Visit page: http://ionicframework.com/getting-started/
+4 - Follow instructions on the web page
 
 #### Cloning Our Repo
 
-1 :heavy_minus_sign: Go to our repo page at: https://github.com/ChicoState/CSUDeals
-2 :heavy_minus_sign: On your terminal, run "$ git clone git@github.com:ChicoState/CSUDeals.git"
+1 - Go to our repo page at: https://github.com/ChicoState/CSUDeals
+2 - On your terminal, run "$ git clone git@github.com:ChicoState/CSUDeals.git"
 
 #### Running the App
 
-1 :heavy_minus_sign: Go into the project folder: "$ cd ../CSUDeals/CSUDeals"
-2 :heavy_minus_sign: "ionic serve"
+1 - Go into the project folder: "$ cd ../CSUDeals/CSUDeals"
+2 - "ionic serve"
 
 #### Tab Views
 
-1 :heavy_minus_sign: "$ cd ../CSUDeals/CSUDeals/www/templates"
-2 :heavy_minus_sign: Edit the HTML file for the view you want to change
+1 - "$ cd ../CSUDeals/CSUDeals/www/templates"
+2 - Edit the HTML file for the view you want to change
+
+#### Adding Images
+
+1 - "$ cd ../CSUDeals/CDUDeals/www/img"
+2 - Add images you want to use
