@@ -5,6 +5,8 @@
 3 - Visit page: http://ionicframework.com/getting-started/
 4 - Follow instructions on the web page
 
+NOTE: Make sure you have Java installed on your system
+
 #### Cloning Our Repo
 
 1 - Go to our repo page at: https://github.com/ChicoState/CSUDeals
@@ -20,6 +22,8 @@
 1 - "$ cd ../CSUDeals/CSUDeals/www/templates"
 2 - Edit the HTML file for the view you want to change
 3 - "$ ionic serve"
+
+Note: Google is a great asset - https://support.google.com/websearch/answer/134479?hl=en
 
 #### Adding Images
 
