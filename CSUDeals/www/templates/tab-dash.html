@@ -3,12 +3,12 @@
     <button class="button button-block button-dark" ng-click="add.show()">
       Add My Business
     </button>
-    <center><!--<h2>Places</h2>-->
+    <!--<center>
     <p>Different businesses will be listed here with the options to:<br><br>
        - Follow/Unfollow<br>
        - Get Directions<br>
        - View Menu
-    </p></center>
+    </p></center>-->
 
   <label class="item-input">
     <i class="icon ion-search placeholder-icon"></i>
@@ -18,13 +18,21 @@
       <div collection-repeat="business in businesses | filter:searchText" divider-collection-repeat>
         <ion-item class="item item-thumbnail-left item-button-right"> 
             <img src="img/default-avatar.jpg"/>
-            <h2>{{business.name}}</h2>
+	    <h2>{{business.name}}</h2>
+	    <!--
+	    <div>{{business.hours}}<br>
+	    <a href="https://goo.gl/maps/ea34S8FdPky" target="_blank"><img src="img/maps_29.png"></a> 
+	    <a href="https://facebook.com/treschico" target="_blank"><img src="img/facebook_29.png"></a> 
+	    <a href="https://twitter.com/treschico" target="_blank"><img src="img/twitter_29.png"></a> 
+	    <a href="https://yelp.com/biz/tres-hombres-long-bar-and-grill-chico" target="_blank"><img src="img/yelp_29.png"></a>
+	    </div>
+	    -->
             <div>website: {{business.url}}</div>
             <div>address: {{business.address}}</div>
-            <div>hours: {{business.hours}}</div>
+	    <div>hours: {{business.hours}}</div>
             <button class="button button-dark">
                 <i class="icon ion-chevron-right" href="#/tab/dash/directions.html"></i>
-            </button>
+	    </button>
         </ion-item>
       </div>
   </ion-list>
