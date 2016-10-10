@@ -1,7 +1,7 @@
 ##### Installing Ionic (Ubuntu)
 
 1 :heavy_minus_sign: "$ sudo apt-get update"
-2 :heavy_minus_sign: "$sudo apt-get upgrade"
+2 :heavy_minus_sign: "$ sudo apt-get upgrade"
 3 :heavy_minus_sign: Visit page: http://ionicframework.com/getting-started/
 4 :heavy_minus_sign: Follow instructions on the web page
 
@@ -14,3 +14,8 @@
 
 1 :heavy_minus_sign: Go into the project folder: "$ cd ../CSUDeals/CSUDeals"
 2 :heavy_minus_sign: "ionic serve"
+
+#### Tab Views
+
+1 :heavy_minus_sign: "$ cd ../CSUDeals/CSUDeals/www/templates"
+2 :heavy_minus_sign: Edit the HTML file for the view you want to change
