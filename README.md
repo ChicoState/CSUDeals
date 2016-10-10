@@ -28,7 +28,7 @@ CSCI 430 Group Project Repository
 - [x] 1 :heavy_minus_sign: Choose database for businesses  FIREBASE :heavy_minus_sign: @hschipper
 - [x] 4 :heavy_minus_sign: connect database to app so users can read from and write to database :heavy_minus_sign: @hschipper
 - [x] 1 :heavy_minus_sign: add search feature for businesses in database :heavy_minus_sign: @hschipper
-- [ ] 2 :heavy_minus_sign: implement logout feature (halfwaydone) :heavy_minus_sign: (Unclaimed)
+- [ ] 2 :heavy_minus_sign: implement logout feature (halfwaydone) :heavy_minus_sign: @kmendoza18
 - [ ] 3 :heavy_minus_sign: Become familiar with chosen notification plugin :heavy_minus_sign: (Unclaimed)
 - [x] 3 :heavy_minus_sign: Become familiar with chosen user login handling method :heavy_minus_sign: (@hschipper)
 - [ ] 2 :heavy_minus_sign: Find a unit testing framework for our project :heavy_minus_sign: (Unclaimed)
@@ -44,8 +44,9 @@ CSCI 430 Group Project Repository
 - [ ] 3 :heavy_minus_sign: get "get directions" button working with google maps or something :heavy_minus_sign: (Unclaimed)
 - [ ] 2 :heavy_minus_sign: add restrictions to hours in database to users can only enter in valid times :heavy_minus_sign: (Unclaimed)
 - [ ] 2 :heavy_minus_sign: throw/catch proper errors for invalid logins :heavy_minus_sign: @hschipper
-- [ ] 2 :heavy_minus_sign: Add logout functionality/button :heavy_minus_sign: @kmendoza18
-- [ ] 1 :heavy_minus_sign: Add background design to tabs :heavy_minus_sign: @kmendoza18
+
+##### Continuous Goals
+- [ ] 1 :heavy_minus_sign: Add/improve design for tabs :heavy_minus_sign: @kmendoza18 (EVERYONE)
 
 ##### Functions to consider for implementation
 - [ ] Add a way for users to upload profile images for chat
