@@ -1,5 +1,5 @@
 <ion-modal-view>
-    <ion-header-bar class="bar bar-header bar-positive">
+    <ion-header-bar class="bar bar-header bar-dark">
       <h1 class="title">Add My Business</h1>
       <button class="button button-clear button-primary" ng-click="add.hide()">
         Cancel
@@ -20,8 +20,20 @@
             <input ng-model="business.address" type="text">
           </label>
           <label class="item item-input">
-            <span class="input-label">*Business hours:</span>\
+            <span class="input-label">*Business hours:</span>
             <input ng-model="business.hours" type="text">
+          </label>
+          <label class="item item-input">
+            <span class="input-label">Facebook URL:</span>
+            <input type="text" ng-model="business.facebookurl" placeholder="facebook.com/FACEBOOK_URL">
+          </label>
+          <label class="item item-input">
+            <span class="input-label">Twitter URL:</span>
+            <input type="text" ng-model="business.twitterurl" placeholder="twitter.com/TWITTER_URL">
+          </label>
+          <label class="item item-input">
+             <span class="input-label">Yelp URL:</span>
+             <input typoe="text" ng-model="business.yelpurl" placeholder="yelp.com/biz/YELP_URL">
           </label>
           <button class="button button-full button-positive" ng-click="addBusiness(business)">
             Submit

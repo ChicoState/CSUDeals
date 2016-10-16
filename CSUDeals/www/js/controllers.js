@@ -113,9 +113,9 @@ we own. furthermore I am not sure how we would get the information
     $scope.add = add;
   })
 
-var ref = new Firebase($scope.firebaseUrl + "/buisnesses");
-//this code adds to ourdatabase
- $scope.addBusiness = function(business) {
+   var ref = new Firebase($scope.firebaseUrl + "/buisnesses");
+   //this code adds to ourdatabase
+   $scope.addBusiness = function(business) {
    if(business.logo && business.address && business.hours) {
      $ionicLoading.show({
        template: "processing information"
@@ -124,7 +124,10 @@ var ref = new Firebase($scope.firebaseUrl + "/buisnesses");
        name : business.logo,
        url : business.url,
        address: business.address,
-       hours: business.hours
+       hours: business.hours,
+       facebookurl: business.facebookurl,
+       twitterurl: business.twitterurl,
+       yelpurl: business.yelpurl
      }, function(error) {
        if (error) {
          alert("Storing Business data failed" + error.message);
@@ -148,12 +151,19 @@ var ref = new Firebase($scope.firebaseUrl + "/buisnesses");
      name: newPost.name,
      url:  newPost.url,
      address: newPost.address,
-     hours: newPost.hours
+     hours: newPost.hours,
+     facebookurl: newPost.facebookurl,
+     twitterurl: newPost.twitterurl,
+     yelpurl: newPost.yelpurl
    };
    $scope.businesses.push(business);
    });
 
 
+})
+//controller for the directions tab
+.controller('DirectionsCtrl', function($scope, $stateParams) {
+   //$scope.destination = {address: "I'm a destination"};
 })
 
 .controller('ChatsCtrl', function($scope, Chats, $firebaseAuth, $ionicLoading) {

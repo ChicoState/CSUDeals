@@ -20,27 +20,27 @@ function($firebaseDatabase, rootScope) {
     id: 0,
     name: 'The Bear',
     lastText: 'Bear Burgers 1/2 Price Until 5PM!',
-    face: 'img/ben.png'
+    face: 'img/default-avatar.jpg'
   }, {
     id: 1,
     name: 'Sierra Nevada',
     lastText: 'Free Beer w/ Entree Purchase Today Only!',
-    face: 'img/max.png'
+    face: 'img/default-avatar.jpg'
   }, {
     id: 2,
     name: 'Riley\'s',
     lastText: 'Well Drinks $0.50 Each 8PM-9PM Today!',
-    face: 'img/adam.jpg'
+    face: 'img/default-avatar.jpg'
   }, {
     id: 3,
     name: 'Chipotle',
     lastText: 'Burritos BOGO After 5PM Today!',
-    face: 'img/perry.png'
+    face: 'img/default-avatar.jpg'
   }, {
     id: 4,
     name: 'Burgers & Brew',
     lastText: 'Happy Hour All Day Today!',
-    face: 'img/mike.png'
+    face: 'img/default-avatar.jpg'
   }];
 
   return {
