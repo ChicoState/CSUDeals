@@ -151,7 +151,10 @@ we own. furthermore I am not sure how we would get the information
      name: newPost.name,
      url:  newPost.url,
      address: newPost.address,
-     hours: newPost.hours
+     hours: newPost.hours,
+     facebookurl: newPost.facebookurl,
+     twitterurl: newPost.twitterurl,
+     yelpurl: newPost.yelpurl
    };
    $scope.businesses.push(business);
    });

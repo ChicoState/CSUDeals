@@ -8,10 +8,10 @@ CSCI 430 Group Project Repository
 - [Ionic](http://ionicframework.com/)
 - [x] Get Ionic development environments installed
 - [x] Become familiar with Ionic
-- [ ] Complete a basic "Hello World" tutorial for Ionic
+- [x] Complete a basic "Hello World" tutorial for Ionic
 - [ ] Download Ionic View application onto smart phones for easy testing
-- [ ] Become generally familiar with Ionic plugins :heavy_minus_sign: [Ionic Marketplace](https://market.ionic.io/plugins)
-- [ ] Become more familiar with Ionic in general
+- [x] Become generally familiar with Ionic plugins :heavy_minus_sign: [Ionic Marketplace](https://market.ionic.io/plugins)
+- [x] Become more familiar with Ionic in general
 - [ ] Become familiar with firebase 3.4.0
 
 ##### ToDo List for Individuals
@@ -41,8 +41,8 @@ CSCI 430 Group Project Repository
 - [x] 4 :heavy_minus_sign: Add hyperlinked images for social media on tab-dash :heavy_minus_sign: @shanemacbride
 - [ ] 4 :heavy_minus_sign: figure out how to add images to our database and display them on tab-dash you would also have to add this feature to the model for adding a business :heavy_minus_sign: (Unclaimed)
 - [ ] 3 :heavy_minus_sign: using firebase auth() function to set write permission for business owners only :heavy_minus_sign: (Unclaimed)
-- [ ] 1 :heavy_minus_sign: add a get directions button on tab-dash :heavy_minus_sign: (Unclaimed)
-- [ ] 3 :heavy_minus_sign: get "get directions" button working with google maps or something :heavy_minus_sign: (Unclaimed)
+- [x] 1 :heavy_minus_sign: add a get directions button on tab-dash :heavy_minus_sign: @shanemacbride
+- [x] 3 :heavy_minus_sign: get "get directions" button working with google maps or something :heavy_minus_sign: @shanemacbride
 - [ ] 2 :heavy_minus_sign: add restrictions to hours in database to users can only enter in valid times :heavy_minus_sign: (Unclaimed)
 - [ ] 2 :heavy_minus_sign: throw/catch proper errors for invalid logins :heavy_minus_sign: @hschipper
 
