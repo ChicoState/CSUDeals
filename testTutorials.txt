@@ -1,0 +1,30 @@
+instructions/commands for ionic unit testing
+
+**Please take note of  any errors as the installation goes, some of these 
+commands need to sudo privileges to install properly
+
+1.)Change your working directory to our project files(the ionic project file itself)
+
+   cd CSUDDeals/CSUDeals
+
+
+2.)Will need to install jasmine-core and bower to work, so run below command
+
+    npm install jasmine-core
+    npm install -g bower
+
+3.) next run the below command to install karma an its dependencies
+
+    npm install karma karma-jasmine karma-phantomjs-launcher --save-dev
+    npm install -g karma-cli
+    npm install
+
+4.) when asked for what version of angular you want to install,
+choose 3 by typing !3 when prompted
+
+    bower install angular-mocks --save-dev
+
+5.) That should do it, I have already set up the karma files following the tutorial. To see how to write your own tests, see this tutorial and others:
+
+    http://mcgivery.com/unit-testing-ionic-app/
+    
