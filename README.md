@@ -31,7 +31,7 @@ CSCI 430 Group Project Repository
 - [ ] 2 :heavy_minus_sign: implement logout feature (halfwaydone) :heavy_minus_sign: @kmendoza18
 - [ ] 3 :heavy_minus_sign: Become familiar with chosen notification plugin :heavy_minus_sign: (Unclaimed)
 - [x] 3 :heavy_minus_sign: Become familiar with chosen user login handling method :heavy_minus_sign: (@hschipper)
-- [ ] 2 :heavy_minus_sign: Find a unit testing framework for our project :heavy_minus_sign: (Unclaimed)
+- [x] 2 :heavy_minus_sign: Find a unit testing framework for our project :heavy_minus_sign: (@cjapp)
 - [ ] 3 :heavy_minus_sign: Get forgot password feature working with firebase (halfway done) :heavy_minus_sign: (Unclaimed)
 - [ ] 2 :heavy_minus_sign: Add email verification when creating an account (firebase) :heavy_minus_sign: (Unclaimed)
 - [ ] 2 :heavy_minus_sign: Add change your password (user information) feature (firebase) :heavy_minus_sign: (Unclaimed)
@@ -39,7 +39,7 @@ CSCI 430 Group Project Repository
 - [ ] 4 :heavy_minus_sign: Get follow button working :heavy_minus_sign: (Unclaimed)
 - [ ] 2 :heavy_minus_sign: Add hyperlink function to website on tab-dash :heavy_minus_sign: @shanemacbride
 - [x] 4 :heavy_minus_sign: Add hyperlinked images for social media on tab-dash :heavy_minus_sign: @shanemacbride
-- [ ] 4 :heavy_minus_sign: figure out how to add images to our database and display them on tab-dash you would also have to add this feature to the model for adding a business :heavy_minus_sign: (Unclaimed)
+- [x] 4 :heavy_minus_sign: figure out how to add images to our database and display them on tab-dash you would also have to add this feature to the model for adding a business :heavy_minus_sign: (@cjapp)
 - [ ] 3 :heavy_minus_sign: using firebase auth() function to set write permission for business owners only :heavy_minus_sign: (Unclaimed)
 - [x] 1 :heavy_minus_sign: add a get directions button on tab-dash :heavy_minus_sign: @shanemacbride
 - [x] 3 :heavy_minus_sign: get "get directions" button working with google maps or something :heavy_minus_sign: @shanemacbride
