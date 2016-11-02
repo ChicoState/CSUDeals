@@ -24,7 +24,11 @@ choose 3 by typing !3 when prompted
 
     bower install angular-mocks --save-dev
 
-5.) That should do it, I have already set up the karma files following the tutorial. To see how to write your own tests, see this tutorial and others:
+5.)To test whether it worked, type in the command:
+
+    karma start tests/my.conf.js
+
+6.) That should do it, I have already set up the karma files following the tutorial. To see how to write your own tests, see this tutorial and others:
 
     http://mcgivery.com/unit-testing-ionic-app/
     
