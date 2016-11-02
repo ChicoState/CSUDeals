@@ -116,7 +116,7 @@ we own. furthermore I am not sure how we would get the information
    var ref = new Firebase($scope.firebaseUrl + "/buisnesses");
    //this code adds to ourdatabase
    $scope.addBusiness = function(business) {
-   if(business.logo && business.address && business.hours) {
+   if(business.logo && business.address && business.open && business.close) {
      $ionicLoading.show({
        template: "processing information"
      });
@@ -124,7 +124,8 @@ we own. furthermore I am not sure how we would get the information
        name : business.logo,
        url : business.url,
        address: business.address,
-       hours: business.hours,
+       open: business.open,
+       close: business.close,
        facebookurl: business.facebookurl,
        twitterurl: business.twitterurl,
        yelpurl: business.yelpurl
@@ -151,7 +152,8 @@ we own. furthermore I am not sure how we would get the information
      name: newPost.name,
      url:  newPost.url,
      address: newPost.address,
-     hours: newPost.hours,
+     open: newPost.open,
+     close: newPost.close,
      facebookurl: newPost.facebookurl,
      twitterurl: newPost.twitterurl,
      yelpurl: newPost.yelpurl
