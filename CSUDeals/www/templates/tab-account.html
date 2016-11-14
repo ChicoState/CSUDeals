@@ -12,18 +12,22 @@
     </ion-toggle>
     </ion-list> -->
 <ion-modal-view>
+
     <ion-header-bar class="bar bar-header bar-dark">
       <h1 class="title">Annouce a Deal</h1>
       <button class="button button-clear button-primary" ng-click="add.hide()">
         Cancel
       </button>
     </ion-header-bar>
+
     <ion-content class="padding">
+
         <div class="list">
           <label class="item item-input">
             <span class="input-label">Message:</span>
             <input type="text" ng-model="message.message" placeholder="A brief description of your message">
           </label>
+
           <label class="item item-input">
              <span class="input-label">Details:</span>
              <input type="text" ng-model="message.details" placeholder="Specific details or limitations">
@@ -31,8 +35,14 @@
           <button class="button button-full button-positive" ng-click="addMessage(message)">
             Submit
           </button>
+
+          <button class="button button-full button-positive" ng-click="modal.show()">
+            Log Out
+          </button>
+
         </div>
       </ion-content>
+
 </ion-modal-view>
   </ion-content>
 </ion-view>

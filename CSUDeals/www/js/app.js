@@ -35,6 +35,11 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','f
       }
     });
 
+    // logOut(){
+    //     this.authData.logoutUser().then(() => {
+    //         this.nav.setRoot(LoginPage);
+    //     }); }
+
     $rootScope.logout = function() {
       console.log("logging out from the app");
       $ionicloading.show({
