@@ -1,43 +1,40 @@
 # CSUDeals
-CSCI 430 Group Project Repository
+CSCI 430 Group Project Group and Individual ToDo Lists
 
-##### Group ToDo List
-- [x] _Description :heavy_minus_sign: Relevant Link(s)_
-- [x] Choose a Framework :heavy_minus_sign: [Ionic](http://ionicframework.com/)
-- [x] Choose a Database :heavy_minus_sign: [Firebase 3.4.0](https://firebase.google.com/)
-- [x] Get Ionic development environments installed :heavy_minus_sign: [Ionic Installation](http://ionicframework.com/docs/guide/installation.html)
-- [x] Complete a basic "Hello World" tutorial for Ionic :heavy_minus_sign: [Starting Ionic](http://ionicframework.com/docs/guide/starting.html)
-- [x] Research Ionic plugins :heavy_minus_sign: [Ionic Marketplace](https://market.ionic.io/plugins)
+## Group ToDo List
+_Complete?_ | _Description_ | _Relevant Link(s)_
+:---: | --- | ---
+:white_check_mark: | Choose a Framework | [Ionic](http://ionicframework.com/)
+:white_check_mark: | Choose a Database | [Firebase 3.4.0](https://firebase.google.com/)
+:white_check_mark: | Get Ionic development environments installed | [Ionic Installation](http://ionicframework.com/docs/guide/installation.html)
+:white_check_mark: | Complete a basic "Hello World" tutorial for Ionic | [Starting Ionic](http://ionicframework.com/docs/guide/starting.html)
+:white_check_mark: | Research Ionic plugins | [Ionic Marketplace](https://market.ionic.io/plugins)
 
-##### Individual ToDo List
-- [x] _Value :heavy_minus_sign: Description :heavy_minus_sign: Assignee :heavy_minus_sign: Relevant Link(s)_
-- [x] 1 :heavy_minus_sign: Create ToDo List :heavy_minus_sign: @shanemacbride :heavy_minus_sign: [toDoList.md](https://github.com/ChicoState/CSUDeals/blob/master/toDoList.md)
-- [x] 1 :heavy_minus_sign: Create base Ionic _tabs_ templated application :heavy_minus_sign: @shanemacbride
-- [x] 2 :heavy_minus_sign: Alter template to resemble client's desired MVP :heavy_minus_sign: @shanemacbride
-- [x] 1 :heavy_minus_sign: Choose how to handle user logins :heavy_minus_sign: @kmendoza18
-- [x] 2 :heavy_minus_sign: Choose a database for logins/businesses :heavy_minus_sign: @hschipper :heavy_minus_sign: [Firebase 3.4.0](https://firebase.google.com/)
-- [x] 1 :heavy_minus_sign: Add _Create Account_ and _Forgot Password?_ buttons:heavy_minus_sign: @hschipper
-- [x] 3 :heavy_minus_sign: Get firebase working with creating accounts and logging in :heavy_minus_sign: @hschipper
-- [x] 3 :heavy_minus_sign: Integrate database so users can read/write :heavy_minus_sign: @hschipper
-- [x] 2 :heavy_minus_sign: Add search feature for businesses in database :heavy_minus_sign: @hschipper
-- [x] 2 :heavy_minus_sign: Research unit testing framework :heavy_minus_sign: (@cjapp)
-- [x] 3 :heavy_minus_sign: Add hyperlinked images for social media :heavy_minus_sign: @shanemacbride
-- [x] 3 :heavy_minus_sign: Research adding images to database and display on tab-dash & add this feature to the model for adding a business :heavy_minus_sign: (@cjapp)
-- [x] 1 :heavy_minus_sign: Add _Get Directions_ button :heavy_minus_sign: @shanemacbride
-- [x] 3 :heavy_minus_sign: Configure _Get Directions_ to get user directions to businesses :heavy_minus_sign: @shanemacbride
-- [x] 1 :heavy_minus_sign: Move ToDo list to separate file and write a proper README description :heavy_minus_sign: @shanemacbride
-- [x] 1 :heavy_minus_sign: Revise ToDo list to improve readability and clean it up :heavy_minus_sign: @shanemacbride
-- [ ] 3 :heavy_minus_sign: Implement _Forgot Password?_ :heavy_minus_sign: (Unclaimed) _halfway done_
-- [ ] 2 :heavy_minus_sign: Configure email verification when creating an account :heavy_minus_sign: (Unclaimed)
-- [ ] 2 :heavy_minus_sign: Implement _Change Password_ :heavy_minus_sign: (Unclaimed)
-- [ ] 2 :heavy_minus_sign: Add button in tab-dash for following business :heavy_minus_sign: @shanemacbride
-- [ ] 3 :heavy_minus_sign: Get follow button working :heavy_minus_sign: (Unclaimed)
-- [ ] 2 :heavy_minus_sign: Add hyperlink to business websites :heavy_minus_sign: @shanemacbride
-- [ ] 3 :heavy_minus_sign: Using firebase, create auth() function to set write permission for business owners only :heavy_minus_sign: (Unclaimed)
-- [ ] 2 :heavy_minus_sign: Add restrictions to hours in database so users can only enter in valid times :heavy_minus_sign: @kmendoza18
-- [ ] 2 :heavy_minus_sign: Throw/catch proper errors for invalid logins :heavy_minus_sign: @hschipper
-- [ ] 2 :heavy_minus_sign: Research notification plugins :heavy_minus_sign: @johnabbott8481 :heavy_minus_sign: [Notification Plugins](https://market.ionic.io/search?q=notifications)
-- [ ] 2 :heavy_minus_sign: Implement logout feature :heavy_minus_sign: @kmendoza18 _halfway done_
-- [ ] 1 :heavy_minus_sign: Add/improve design for tabs :heavy_minus_sign: (Unclaimed)
-- [ ] 3 :heavy_minus_sign: Add a way for users to upload profile images for chat :heavy_minus_sign: (Unclaimed)
-- [ ] 3 :heavy_minus_sign: Configure logging in with gmail, facebook, etc. :heavy_minus_sign: (Unclaimed)
+## Individual ToDo List
+_Complete?_ | _Value 1-3_ | _Description_ | _Assignee_ | _Relevant Link(s)_
+:---: | :---: | --- | :---: | ---
+:white_check_mark: | 1 | Create ToDo List | @shanemacbride | [toDoList.md](https://github.com/ChicoState/CSUDeals/blob/master/toDoList.md)
+:white_check_mark: | 2 | Create base Ionic _tabs_ templated application and alter to resemble client's desired MVP | @shanemacbride
+:white_check_mark: | 1 | Choose how to handle user logins | @kmendoza18
+:white_check_mark: | 3 | Choose a database for logins/businesses, add _Create Account_ and _Forgot Password?_ buttons | @hschipper | [Firebase 3.4.0](https://firebase.google.com/)
+:white_check_mark: | 3 | Get firebase working with creating accounts and logging in | @hschipper
+:white_check_mark: | 3 | Integrate database so users can read/write | @hschipper
+:white_check_mark: | 2 | Add search feature for businesses in database | @hschipper
+:white_check_mark: | 2 | Research unit testing framework | @cjapp
+:white_check_mark: | 3 | Add hyperlinked images for social media that link to Yelp/Google Maps with directions/etc.  | @shanemacbride
+:white_check_mark: | 3 | Research adding images to database and display on tab-dash & add this feature to the model for adding a business | @cjapp
+:white_check_mark: | 2 | Move, revise, and table ToDo list to separate file with improved readability and write a proper README description | @shanemacbride
+:no_entry_sign: | 1 | Add button in tab-dash for following business | @shanemacbride
+:no_entry_sign: | 1 | Add hyperlink to business websites | @shanemacbride
+:no_entry_sign: | 2 | Add restrictions to hours in database so users can only enter in valid times | @kmendoza18
+:no_entry_sign: | 2 | Throw/catch proper errors for invalid logins | @hschipper
+:no_entry_sign: | 2 | Research notification plugins | @johnabbott8481 | [Notification Plugins](https://market.ionic.io/search?q=notifications)
+:no_entry_sign: | 2 | Implement logout feature | @kmendoza18 _halfway done_
+:no_entry_sign: | 1 | Add/improve design for tabs | (Unclaimed)
+:no_entry_sign: | 3 | Add a way for users to upload profile images for chat | (Unclaimed)
+:no_entry_sign: | 3 | Configure logging in with gmail, facebook, etc. | (Unclaimed)
+:no_entry_sign: | 3 | Implement _Forgot Password?_ | (Unclaimed) _halfway done_
+:no_entry_sign: | 2 | Implement _Change Password_ | (Unclaimed)
+:no_entry_sign: | 2 | Configure email verification when creating an account | (Unclaimed)
+:no_entry_sign: | 3 | Using firebase, create auth() function to set write permission for business owners only | (Unclaimed)
+:no_entry_sign: | 3 | Get follow button working | (Unclaimed)
