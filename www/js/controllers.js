@@ -1,4 +1,3 @@
-<<<<<<< HEAD:CSUDeals/www/js/controllers.js
 angular.module('starter.controllers', [])
 
 /*.controller('LoginCtrl', function($scope, LoginService, $ionicPopup, $state) {
@@ -131,7 +130,7 @@ we own. furthermore I am not sure how we would get the information
        facebookurl: business.facebookurl,
        twitterurl: business.twitterurl,
        yelpurl: business.yelpurl
-     }, function(error) {         
+     }, function(error) {
        if (error) {
          alert("Storing Business data failed" + error.message);
          $ionicLoading.hide();
@@ -194,7 +193,6 @@ we own. furthermore I am not sure how we would get the information
     enableFriends: true
   };
 });
-=======
 angular.module('starter.controllers', [])
 
 /*.controller('LoginCtrl', function($scope, LoginService, $ionicPopup, $state) {
@@ -409,11 +407,10 @@ we own. furthermore I am not sure how we would get the information
             alert("Change password successfully!");
             $scope.change.hide();
             },function(error) {
-              alert("Error!") 
-            });   
+              alert("Error!")
+            });
        }
      else
        {alert("Password is not correct!")}
    }
 });
->>>>>>> db51a83c2ad4646d4ef5a70e6b0168dac26a5c05:www/js/controllers.js
