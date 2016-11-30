@@ -40,12 +40,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','f
     //         this.nav.setRoot(LoginPage);
     //     }); }
 
-    $rootScope.logout = function() {
+    $rootScope.logOut = function() {
       console.log("logging out from the app");
       $ionicloading.show({
         template: 'Logging Out...'
       });
-      Auth.$signout();
+      Auth.$signOut();
     }
 
     $rootScope.$on("$stateChangeError", function (event, toState, toParams, fromState, fromParams, error) {

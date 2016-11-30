@@ -130,7 +130,7 @@ we own. furthermore I am not sure how we would get the information
        facebookurl: business.facebookurl,
        twitterurl: business.twitterurl,
        yelpurl: business.yelpurl
-     }, function(error) {
+     }, function(error) {         
        if (error) {
          alert("Storing Business data failed" + error.message);
          $ionicLoading.hide();

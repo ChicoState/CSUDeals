@@ -24,35 +24,36 @@
             <input type="text" ng-model="business.address">
           </label>
 
+          <!-- pattern="([0-1]{1}[0-9]{1}|20|21|22|23):[0-5]{1}[0-9]{1}" -->
           <label class="item item-input">
-            <span class="input-label">*Opening Time:</span>
-            <input ng-model="business.open" type="time">
+            <span class="input-label">*Opening Time (HH:MM):</span>
+            <input ng-model="business.open" type="text">
           </label>
 
-	  <label class="item item-input">
-	    <span class="input-label">*Closing Time:</span>
-	    <input ng-model="business.close" type="time">
-	  </label>
+    	  <label class="item item-input">
+    	    <span class="input-label">*Closing Time (HH:MM):</span>
+    	    <input ng-model="business.close" type="text">
+    	  </label>
 
           <label class="item item-input">
             <span class="input-label">Facebook URL:</span>
             <input type="text" ng-model="business.facebookurl" placeholder="facebook.com/FACEBOOK_URL">
           </label>
-          
+
           <label class="item item-input">
             <span class="input-label">Twitter URL:</span>
             <input type="text" ng-model="business.twitterurl" placeholder="twitter.com/TWITTER_URL">
           </label>
-          
+
           <label class="item item-input">
              <span class="input-label">Yelp URL:</span>
              <input typoe="text" ng-model="business.yelpurl" placeholder="yelp.com/biz/YELP_URL">
           </label>
-          
+
           <button class="button button-full button-positive" ng-click="addBusiness(business)">
             Submit
           </button>
-          
+
         </div>
       </ion-content>
 </ion-modal-view>

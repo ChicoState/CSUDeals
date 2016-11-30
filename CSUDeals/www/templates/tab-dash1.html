@@ -16,12 +16,12 @@
   </label>
   <ion-list>
       <div collection-repeat="business in businesses | filter:searchText" divider-collection-repeat>
-        <ion-item> 
+        <ion-item>
             <h2>{{business.name}}</h2>
             <div>website: {{business.url}}</div>
             <div>address: {{business.address}}</div>
             <div>open: {{business.open}}</div>
-	    <div>close: {{business.close}}</div>
+	        <div>close: {{business.close}}</div>
         </ion-item>
       </div>
   </ion-list>
