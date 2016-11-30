@@ -188,8 +188,28 @@ we own. furthermore I am not sure how we would get the information
   $scope.chat = Chats.get($stateParams.chatId);
 })
 
-.controller('AccountCtrl', function($scope) {
+.controller('AccountCtrl', function($scope, $firebaseAuth, $ionicModal, $ionicPopup, $state, $firebaseAuth, $ionicLoading, $rootScope) {
   $scope.settings = {
     enableFriends: true
   };
+
+  var ref = new Firebase($scope.firebaseUrl);
+  var auth = $firebaseAuth();
+
+  // logOut(){
+  //     this.authData.logoutUser().then(() => {
+  //         this.nav.setRoot(LoginPage);
+  //     }); }
+
+  $scope.logOut = function() {
+    console.log("logging out from the app");
+    $ionicLoading.show({template: 'Logging Out...'});
+
+    //firebase.auth().logOut().then(function (authData) {
+    $ionicLoading.hide();
+    $state.go('login');
+    //Auth.$signOut();
+    //});
+
+    };
 });
