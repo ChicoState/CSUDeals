@@ -1,5 +1,5 @@
 # CSUDeals
-CSCI 430 Group Project Repository
+CSCI 430 Group Project Repository - [Application Login](https://chicostate.github.io/CSUDeals/www/)
 
 ![Ionic][ionicIcon] 
 
