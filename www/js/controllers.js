@@ -162,6 +162,10 @@ we own. furthermore I am not sure how we would get the information
    $scope.businesses.push(business);
    });
 
+   $scope.remove = function(business) {
+     Chats.remove(business);
+   };
+
 })
 //controller for the directions tab
 .controller('DirectionsCtrl', function($scope, $stateParams) {
