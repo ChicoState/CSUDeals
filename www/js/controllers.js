@@ -203,8 +203,16 @@ $ionicModal.fromTemplateUrl('templates/changepassword.html', {
      var password;
      if (user != null)
      { password = user.pwdForLogin;
-       alert(password);}
-*/
+       alert(password);}*/
+   /*  var credential = firebase.auth.EmailAuthProvider.credential(
+        user.email,
+        user.pwdForLogin
+      );
+     user.reauthenticate(credential).then(function(){
+       alert("aaaa");
+     },function(error){
+       alert("User's email/password is wrong.")
+     });*/
      var newpassword = c.npassword;
      if (newpassword == c.cpassword)
        {
@@ -218,15 +226,22 @@ $ionicModal.fromTemplateUrl('templates/changepassword.html', {
      else
        {alert("Password is not correct!")}
    }
-  var ref = new Firebase($scope.firebaseUrl);
-  var auth = $firebaseAuth();
+  //var ref = new Firebase($scope.firebaseUrl);
+  //var auth = $firebaseAuth();
 
   // logOut(){
   //     this.authData.logoutUser().then(() => {
   //         this.nav.setRoot(LoginPage);
   //     }); }
 
-  $scope.logOut = function() {
+  $scope.signout = function() {
+    firebase.auth().signOut().then(function() {
+    alert(" Sign-out successful.")
+}, function(error) {
+    alert(" An error happened.")
+});
+}
+/*
     console.log("logging out from the app");
     $ionicLoading.show({template: 'Logging Out...'});
 
@@ -235,6 +250,5 @@ $ionicModal.fromTemplateUrl('templates/changepassword.html', {
     $state.go('login');
     //Auth.$signOut();
     //});
-
-    }
+*/
 });
