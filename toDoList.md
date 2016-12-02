@@ -29,11 +29,11 @@ _Complete?_ | _Value 1-3_ | _Description_ | _Assignee_ | _Relevant Link(s)_
 :no_entry_sign: | 2 | Add restrictions to hours in database so users can only enter in valid times | @kmendoza18
 :no_entry_sign: | 2 | Throw/catch proper errors for invalid logins | @hschipper
 :no_entry_sign: | 2 | Research notification plugins | @johnabbott8481 | [Notification Plugins](https://market.ionic.io/search?q=notifications)
-:no_entry_sign: | 2 | Implement logout feature | @kmendoza18 _halfway done_
+:white_check_mark: | 2 | Implement logout feature | (@wangenda)
 :no_entry_sign: | 1 | Add/improve design for tabs | (Unclaimed)
 :no_entry_sign: | 3 | Add a way for users to upload profile images for chat | (Unclaimed)
 :no_entry_sign: | 3 | Configure logging in with gmail, facebook, etc. | (Unclaimed)
-:no_entry_sign: | 3 | Implement _Forgot Password?_ | (Unclaimed) _halfway done_
+:white_check_mark: | 3 | Implement _Forgot Password?_ | (@wangenda)
 :white_check_mark: | 2 | Implement _Change Password_ | (@wangenda)
 :no_entry_sign: | 2 | Configure email verification when creating an account | (Unclaimed)
 :no_entry_sign: | 3 | Using firebase, create auth() function to set write permission for business owners only | (Unclaimed)
