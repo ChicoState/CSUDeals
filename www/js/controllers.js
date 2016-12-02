@@ -30,8 +30,16 @@ $scope.login = function() {
      scope: $scope
    }).then(function(reset) {
      $scope.reset = reset;
-   })
-
+   });
+   $scope.resetpass= function(user) {
+     var auth = firebase.auth();
+     var emailAddress = user.email;
+     auth.sendPasswordResetEmail(emailAddress).then(function() {
+       alert("Email have been sent!");
+     }, function(error) {
+        alert("An error happened.")
+     });
+}   
 /*
  This was for adding functionality for when a user forgot their password.
   I couldnt get it to work because firebase sends an email to the user with
