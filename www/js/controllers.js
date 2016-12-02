@@ -162,7 +162,6 @@ we own. furthermore I am not sure how we would get the information
    $scope.businesses.push(business);
    });
 
-
 })
 //controller for the directions tab
 .controller('DirectionsCtrl', function($scope, $stateParams) {
@@ -220,8 +219,8 @@ $ionicModal.fromTemplateUrl('templates/changepassword.html', {
             alert("Change password successfully!");
             $scope.change.hide();
             },function(error) {
-              alert("Error!") 
-            });   
+              alert("Error!")
+            });
        }
      else
        {alert("Password is not correct!")}
