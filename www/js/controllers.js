@@ -192,7 +192,32 @@ we own. furthermore I am not sure how we would get the information
   $scope.settings = {
     enableFriends: true
   };
-
+$ionicModal.fromTemplateUrl('templates/changepassword.html', {
+     scope: $scope
+   }).then(function(change) {
+     $scope.change = change;
+   })
+  $scope.changepassword = function(c) {
+     var user = firebase.auth().currentUser;
+/*   Can't find a way to get the current password
+     var password;
+     if (user != null)
+     { password = user.pwdForLogin;
+       alert(password);}
+*/
+     var newpassword = c.npassword;
+     if (newpassword == c.cpassword)
+       {
+            user.updatePassword(newpassword).then(function(){
+            alert("Change password successfully!");
+            $scope.change.hide();
+            },function(error) {
+              alert("Error!") 
+            });   
+       }
+     else
+       {alert("Password is not correct!")}
+   }
   var ref = new Firebase($scope.firebaseUrl);
   var auth = $firebaseAuth();
 
@@ -211,5 +236,5 @@ we own. furthermore I am not sure how we would get the information
     //Auth.$signOut();
     //});
 
-    };
+    }
 });

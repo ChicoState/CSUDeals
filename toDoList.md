@@ -34,7 +34,7 @@ _Complete?_ | _Value 1-3_ | _Description_ | _Assignee_ | _Relevant Link(s)_
 :no_entry_sign: | 3 | Add a way for users to upload profile images for chat | (Unclaimed)
 :no_entry_sign: | 3 | Configure logging in with gmail, facebook, etc. | (Unclaimed)
 :no_entry_sign: | 3 | Implement _Forgot Password?_ | (Unclaimed) _halfway done_
-:no_entry_sign: | 2 | Implement _Change Password_ | (Unclaimed)
+:white_check_mark: | 2 | Implement _Change Password_ | (@wangenda)
 :no_entry_sign: | 2 | Configure email verification when creating an account | (Unclaimed)
 :no_entry_sign: | 3 | Using firebase, create auth() function to set write permission for business owners only | (Unclaimed)
 :no_entry_sign: | 3 | Get follow button working | (Unclaimed)
