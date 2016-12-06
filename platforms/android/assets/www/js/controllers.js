@@ -30,8 +30,17 @@ $scope.login = function() {
      scope: $scope
    }).then(function(reset) {
      $scope.reset = reset;
-   })
-
+   });
+   $scope.resetpass= function(user) {
+     var auth = firebase.auth();
+     var emailAddress = user.email;
+     auth.sendPasswordResetEmail(emailAddress).then(function() {
+       alert("Email have been sent!");
+       $scope.reset.hide();
+     }, function(error) {
+        alert("An error happened.")
+     });
+}   
 /*
  This was for adding functionality for when a user forgot their password.
   I couldnt get it to work because firebase sends an email to the user with
@@ -122,8 +131,8 @@ we own. furthermore I am not sure how we would get the information
        template: "processing information"
      });
     ref.push({
-       name : business.logo,
-       url : business.url,
+       name: business.logo,
+       url: business.url,
        address: business.address,
        open: business.open,
        close: business.close,
@@ -188,8 +197,67 @@ we own. furthermore I am not sure how we would get the information
   $scope.chat = Chats.get($stateParams.chatId);
 })
 
-.controller('AccountCtrl', function($scope) {
+.controller('AccountCtrl', function($scope, $firebaseAuth, $ionicModal, $ionicPopup, $state, $firebaseAuth, $ionicLoading, $rootScope) {
   $scope.settings = {
     enableFriends: true
   };
+$ionicModal.fromTemplateUrl('templates/changepassword.html', {
+     scope: $scope
+   }).then(function(change) {
+     $scope.change = change;
+   })
+  $scope.changepassword = function(c) {
+     var user = firebase.auth().currentUser;
+/*   Can't find a way to get the current password
+     var password;
+     if (user != null)
+     { password = user.pwdForLogin;
+       alert(password);}*/
+   /*  var credential = firebase.auth.EmailAuthProvider.credential(
+        user.email,
+        user.pwdForLogin
+      );
+     user.reauthenticate(credential).then(function(){
+       alert("aaaa");
+     },function(error){
+       alert("User's email/password is wrong.")
+     });*/
+     var newpassword = c.npassword;
+     if (newpassword == c.cpassword)
+       {
+            user.updatePassword(newpassword).then(function(){
+            alert("Change password successfully!");
+            $scope.change.hide();
+            },function(error) {
+              alert("Error!") 
+            });   
+       }
+     else
+       {alert("Password is not correct!")}
+   }
+  //var ref = new Firebase($scope.firebaseUrl);
+  //var auth = $firebaseAuth();
+
+  // logOut(){
+  //     this.authData.logoutUser().then(() => {
+  //         this.nav.setRoot(LoginPage);
+  //     }); }
+
+  $scope.signout = function() {
+    firebase.auth().signOut().then(function() {
+    alert(" Sign-out successful.")
+}, function(error) {
+    alert(" An error happened.")
+});
+}
+/*
+    console.log("logging out from the app");
+    $ionicLoading.show({template: 'Logging Out...'});
+
+    //firebase.auth().logOut().then(function (authData) {
+    $ionicLoading.hide();
+    $state.go('login');
+    //Auth.$signOut();
+    //});
+*/
 });

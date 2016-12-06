@@ -25,10 +25,15 @@
                 <input ng-model="user.displayname" type="text">
             </label>
 
+            <form action="demo_form.asp" method="get">
+                <input type="checkbox" name="userType" value="Business" checked>I am a business<br>
+                <input ng-model="user.displayname" type="text">
+            </form>
+
             <button class="button button-full button-positive" ng-click="createUser(user)">
               Create
             </button>
-            
+
         </div>
     </ion-content>
 </ion-modal-view>

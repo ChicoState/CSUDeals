@@ -19,16 +19,16 @@
   </label>
   <ion-list>
       <div collection-repeat="business in businesses | filter:searchText" divider-collection-repeat>
-        <ion-item class="item item-thumbnail-left item-button-right"> 
+        <ion-item class="item item-thumbnail-left item-button-right">
             <img src="img/default-avatar.jpg"/>
 	    <h2>{{business.name}}</h2>
 	    <div>Open: {{business.open}}<br>
 	    <div>Close: {{business.close}}<br>
-	    <a href="https://www.google.com/maps/place/{{business.address}}" target="_blank"><img src="img/maps_29.png"></a> 
-	    <a href="https://facebook.com/{{business.facebookurl}}" target="_blank"><img src="img/facebook_29.png"></a> 
-	    <a href="https://twitter.com/{{business.twitterurl}}" target="_blank"><img src="img/twitter_29.png"></a> 
+	    <a href="https://www.google.com/maps/place/{{business.address}}" target="_blank"><img src="img/maps_29.png"></a>
+	    <a href="https://facebook.com/{{business.facebookurl}}" target="_blank"><img src="img/facebook_29.png"></a>
+	    <a href="https://twitter.com/{{business.twitterurl}}" target="_blank"><img src="img/twitter_29.png"></a>
 	    <a href="https://yelp.com/biz/{{business.yelpurl}}" target="_blank"><img src="img/yelp_29.png"></a>
-      <a href="#" id="followBtn-{{business.name}}" data-id="{{business.name}}" class="btn default small btn-follow">Follow</a>
+        <a href="#" id="followBtn-{{business.name}}" data-id="{{business.name}}" class="btn default small btn-follow">Follow</a>
 	    </div>
 	    <!--
             <div>website: {{business.url}}</div>
@@ -37,6 +37,11 @@
             <button class="button button-dark">
                 <i class="icon ion-chevron-right" href="#/tab/dash/directions.html"></i>
 	    </button>-->
+
+        <ion-option-button class="button-assertive" ng-click="remove(business)">
+          Delete
+        </ion-option-button>
+
         </ion-item>
       </div>
   </ion-list>
