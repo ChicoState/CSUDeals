@@ -40,7 +40,7 @@ $scope.login = function() {
      }, function(error) {
         alert("An error happened.")
      });
-}   
+}
 /*
  This was for adding functionality for when a user forgot their password.
   I couldnt get it to work because firebase sends an email to the user with
@@ -206,6 +206,32 @@ $ionicModal.fromTemplateUrl('templates/changepassword.html', {
    }).then(function(change) {
      $scope.change = change;
    })
+
+   var ref = new Firebase($scope.firebaseUrl + "/message");
+   //this code adds to ourdatabase
+   $scope.addMessage = function(message) {
+   if( message.message && message.details) {
+     $ionicLoading.show({
+       template: "processing information"
+     });
+    ref.push({
+       message: message.message,
+       details: message.details,
+     }, function(error) {
+       if (error) {
+         alert("Storing Business data failed" + error.message);
+         $ionicLoading.hide();
+       } else {
+         console.log("added business information to database");
+         $ionicLoading.hide();
+         $scope.add.hide();
+         alert("business added successfully");
+       }
+     });
+   } else
+     alert("Please fill all details with * ")
+   }
+
   $scope.changepassword = function(c) {
      var user = firebase.auth().currentUser;
 /*   Can't find a way to get the current password
@@ -229,8 +255,8 @@ $ionicModal.fromTemplateUrl('templates/changepassword.html', {
             alert("Change password successfully!");
             $scope.change.hide();
             },function(error) {
-              alert("Error!") 
-            });   
+              alert("Error!")
+            });
        }
      else
        {alert("Password is not correct!")}
