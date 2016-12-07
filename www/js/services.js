@@ -41,6 +41,21 @@ function($firebaseDatabase, rootScope) {
     name: 'Burgers & Brew',
     lastText: 'Happy Hour All Day Today!',
     face: 'img/default-avatar.jpg'
+}, {
+  id: 5,
+  name: 'Hula\'s Chinese BBQ',
+  lastText: 'All you can eat all day!',
+  face: 'img/default-avatar.jpg'
+}, {
+  id: 6,
+  name: 'Target',
+  lastText: '25% off with your Target Red Card!',
+  face: 'img/default-avatar.jpg'
+}, {
+  id: 7,
+  name: 'McDonald\'s',
+  lastText: 'Free smoothie with purchase of $5 or more',
+  face: 'img/default-avatar.jpg'
   }];
 
   return {
